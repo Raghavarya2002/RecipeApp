@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">RecipeApp</string>
-    <string name="all_recipes">All Recipes</string>
+    <string name="all_recipes">TheMealDB</string>
     <string name="category_name">Category name</string>
 </resources>

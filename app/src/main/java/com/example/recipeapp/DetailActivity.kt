@@ -77,8 +77,8 @@ class DetailActivity : BaseActivity() {
                             "${response.body()!!.mealsEntity[0].stringredient19}      ${response.body()!!.mealsEntity[0].strmeasure19}\n" +
                             "${response.body()!!.mealsEntity[0].stringredient20}      ${response.body()!!.mealsEntity[0].strmeasure20}\n"
 
-                tvIngredients.text = ingredient
-                tvInstructions.text = response.body()!!.mealsEntity[0].strinstructions
+                Ingredients.text = ingredient
+                Instructions.text = response.body()!!.mealsEntity[0].strinstructions
 
                 if (response.body()!!.mealsEntity[0].strsource != null) {
                     youtubeLink = response.body()!!.mealsEntity[0].strsource

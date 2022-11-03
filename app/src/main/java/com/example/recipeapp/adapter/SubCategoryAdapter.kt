@@ -8,34 +8,34 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recipeapp.R
 import com.example.recipeapp.entities.MealsItems
-import kotlinx.android.synthetic.main.item_rv_main_category.view.*
-import kotlinx.android.synthetic.main.item_rv_main_category.view.img_dish
-import kotlinx.android.synthetic.main.item_rv_main_category.view.tv_dish_name
-import kotlinx.android.synthetic.main.item_rv_sub_category.view.*
+import kotlinx.android.synthetic.main.item_sub_category.view.*
 
-class SubCategoryAdapter: RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHolder>() {
+class SubCategoryAdapter : RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHolder>() {
 
     var listener: SubCategoryAdapter.OnItemClickListener? = null
-    var ctx : Context? = null
+    var ctx: Context? = null
     var arrSubCategory = ArrayList<MealsItems>()
-    class RecipeViewHolder(view: View): RecyclerView.ViewHolder(view){
+
+    class RecipeViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     }
 
-    fun setData(arrData : List<MealsItems>){
+    fun setData(arrData: List<MealsItems>) {
         arrSubCategory = arrData as ArrayList<MealsItems>
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
         ctx = parent.context
-        return RecipeViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_rv_sub_category,parent,false))
+        return RecipeViewHolder(
+            LayoutInflater.from(parent.context).inflate(R.layout.item_sub_category, parent, false)
+        )
     }
 
     override fun getItemCount(): Int {
         return arrSubCategory.size
     }
 
-    fun setClickListener(listener1: SubCategoryAdapter.OnItemClickListener){
+    fun setClickListener(listener1: SubCategoryAdapter.OnItemClickListener) {
         listener = listener1
     }
 
@@ -50,7 +50,7 @@ class SubCategoryAdapter: RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHold
         }
     }
 
-    interface OnItemClickListener{
-        fun onClicked(id:String)
+    interface OnItemClickListener {
+        fun onClicked(id: String)
     }
 }

@@ -10,17 +10,21 @@ import com.example.recipeapp.entities.*
 import com.example.recipeapp.entities.converter.CategoryListConverter
 import com.example.recipeapp.entities.converter.MealListConverter
 
-@Database(entities = [Recipes::class, CategoryItems::class, Category::class, Meal::class, MealsItems::class],version = 1,exportSchema = false)
+@Database(
+    entities = [Recipes::class, CategoryItems::class, Category::class, Meal::class, MealsItems::class],
+    version = 1,
+    exportSchema = false
+)
 @TypeConverters(CategoryListConverter::class, MealListConverter::class)
-abstract class RecipeDatabase: RoomDatabase() {
+abstract class RecipeDatabase : RoomDatabase() {
 
-    companion object{
+    companion object {
 
-        var recipesDatabase:RecipeDatabase? = null
+        var recipesDatabase: RecipeDatabase? = null
 
         @Synchronized
-        fun getDatabase(context: Context): RecipeDatabase{
-            if (recipesDatabase == null){
+        fun getDatabase(context: Context): RecipeDatabase {
+            if (recipesDatabase == null) {
                 recipesDatabase = Room.databaseBuilder(
                     context,
                     RecipeDatabase::class.java,

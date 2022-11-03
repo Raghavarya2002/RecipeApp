@@ -14,8 +14,10 @@
         <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_detail.xml" value="0.19907407407407407" />
         <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_home.xml" value="0.19907407407407407" />
         <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/activity_splash.xml" value="0.175" />
+        <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_main_category.xml" value="0.209375" />
         <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_rv_main_category.xml" value="0.175" />
         <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_rv_sub_category.xml" value="0.19907407407407407" />
+        <entry key="..\:/Users/Upanshu ARYA/AndroidStudioProjects/RecipeApp/app/src/main/res/layout/item_sub_category.xml" value="0.209375" />
       </map>
     </option>
   </component>
